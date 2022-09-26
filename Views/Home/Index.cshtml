@@ -1,0 +1,145 @@
+﻿@model SeyahatWebProje.Models.AnasayfaModel
+
+<section class="ftco-section services-section bg-light">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate fadeInUp ftco-animated">
+				<h2 class="mb-4">Maceranıza başlama zamanı</h2>
+				<p>
+					İnsanoğlu için hayat bir maceradır. Bungee jamping yapmalar, Dağın üstünde bisiklet sürmeler falan... Hatta havuza atlamak bir maceradır bazen. Macera, hayatı yaşamaktır. Yokuştan aşağı bisikletle inerken kollarını açıp bağırmak ta maceradır. İçinde özgürlüğün olduğu bir macera hemde. Saçmalıktır bazen, arkadaşınla okuldan kaçmak, sana göre çok büyük bir maceradır. Ya da annenden gizli telefonunu almak. İçinde heyecanın da olduğu bir saçmalıktır. Bunları yapmanın bir iyi bir de kötü yönü vardır. Kötü yönü; sonucun kötü olacağını bilmene rağmen durmamaktır. İyi yönü ise; yaşadığını anlamaktır. Özgürlüğü hissetmektir. Kısacası macera, her şeydir.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+						<div class="media block-6 services d-block">
+							<div class="icon"><span class="flaticon-paragliding"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Aktiviteler</h3>
+								<p>İlk defa deneyimleyeceğiz harika aktiviler.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+						<div class="media block-6 services d-block">
+							<div class="icon"><span class="flaticon-route"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Yolculuk planları</h3>
+								<p>Kusursuz yolculuk planlarını hep birlikte yapıyoruz.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+						<div class="media block-6 services d-block">
+							<div class="icon"><span class="flaticon-tour-guide"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Özel Rehber</h3>
+								<p>Gezilecek yerler için size özel rehberlik sağlıyoruz.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+						<div class="media block-6 services d-block">
+							<div class="icon"><span class="flaticon-map"></span></div>
+							<div class="media-body">
+								<h3 class="heading mb-3">Konum Yöneticisi</h3>
+								<p>Mürettebat varış tarihlerini ve saatlerini programlayıp size bildiriyoruz.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center pb-4">
+            <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                <h2 class="mb-4">En İyi Gezilerim</h2>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var item in Model.enIyiGezilerim)
+	        {
+            <div class="col-md-3 ftco-animate fadeInUp ftco-animated">
+                <div class="project-destination">
+                        <a href="/Blog/BlogDetay/@item.ID" class="img" style="background-image: url(@item.BlogImage);">
+                        <div class="text">
+                            <h3>@item.Baslik</h3>
+                                <span>@item.Tarih.ToString("dd.MM.yyyy")</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-no-pt">
+	<div class="container">
+		<div class="row justify-content-center pb-4">
+			<div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+				<h2 class="mb-4">En Popüler 9 Blog</h2>
+			</div>
+		</div>
+		<div class="row">
+			@foreach (var item in Model.populerGeziler)
+			{
+				<div class="col-md-4 ftco-animate fadeInUp ftco-animated">
+					<div class="project-wrap">
+						<a href="/Blog/BlogDetay/@item.ID" class="img" style="background-image: url(@item.BlogImage);"></a>
+						<div class="text p-4">
+							<span class="price">@item.Tarih.ToString("dd.MM.yyyy")</span>
+							@*<span class="days">8 Days Tour</span>*@
+							<h3><a href="/Blog/BlogDetay/@item.ID">@item.Baslik</a></h3>
+							@*<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>*@
+							<ul>
+								@*<li><span class="icon-chat"></span>2</li>*@
+@*								<li><span class="flaticon-king-size"></span>3</li>
+								<li><span class="flaticon-mountains"></span>Near Mountain</li>*@
+							</ul>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center pb-4">
+			<div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+				<h2 class="mb-4">Son Gönderiler</h2>
+			</div>
+		</div>
+		<div class="row d-flex">
+			@foreach (var item in Model.sonGonderiler)
+			{
+				<div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+					<div class="blog-entry justify-content-end">
+						<a href="/Blog/BlogDetay/@item.ID" class="block-20" style="background-image: url('@item.BlogImage');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-4 topp">
+								<div class="one">
+									<span class="day">@item.Tarih.ToString("dd")</span>
+								</div>
+								<div class="two">
+									<span class="yr">@item.Tarih.ToString("yyyy")</span>
+									<span class="mos">@item.Tarih.ToString("MM")</span>
+								</div>
+							</div>
+							<h3 class="heading"><a href="/Blog/BlogDetay/@item.ID">@item.Baslik</a></h3>
+							<p>@item.Aciklama.Substring(0,100)..</p>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</section>

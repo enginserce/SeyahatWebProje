@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Yönetim Paneli</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/area/css/styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand ps-3" href="/admin">Yönetim Paneli</a>
+        <ul class="navbar-nav ms-auto ms-md-12 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/">Site Anasayfası</a></li>
+                    <li><a class="dropdown-item" href="/GirisYap/LogOut">Çıkış</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">ADMIN</div>
+                        <a class="nav-link" href="/admin/index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                            Anasayfa
+                        </a>
+                        <a class="nav-link" href="/admin/blog">
+                            <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                            Blog Listele
+                        </a>
+                        <a class="nav-link" href="/admin/yeniblog">
+                            <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+                            Blog Ekle
+                        </a>
+                        <a class="nav-link" href="/admin/yorumlar">
+                            <div class="sb-nav-link-icon"><i class="fas fa-comment"></i></div>
+                            Yorumlar
+                        </a>
+                        <a class="nav-link" href="/admin/hakkimizda">
+                            <div class="sb-nav-link-icon"><i class="fas fa-info"></i></div>
+                            Hakkımızda
+                        </a>
+                        <a class="nav-link" href="/admin/iletisim">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                            İletişim
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+           <main>
+                @RenderBody()
+           </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; 2022 | Engin Serçe</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

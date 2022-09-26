@@ -1,0 +1,11 @@
+﻿<div class="comment-form-wrap pt-5">
+    <h3 class="mb-5">Yorum yapın</h3>
+    
+    <form class="p-5 bg-light" method="post" >
+        <input type="hidden" class="form-control" name="Blogid" placeholder="ID" value="@ViewBag.find">
+        <input type="text" class="form-control" name="KullaniciAdi" placeholder="Kullanıcı Adı" required>     
+            <input type="email" class="form-control" name="Mail" placeholder="Mail" required>
+            <textarea name="Yorum" cols="30" rows="10" class="form-control" placeholder="Yorum" required></textarea>
+            <input type="submit" value="Gönder" class="btn py-3 px-4 btn-primary">
+    </form>
+</div>

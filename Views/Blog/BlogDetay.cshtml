@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Blog Detay";
+}
+
+@model SeyahatWebProje.Models.Siniflar.BlogYorum
+
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 order-md-last ftco-animate py-md-5 mt-md-5 fadeInUp ftco-animated">
+              @foreach (var item in Model.deger1)
+					{
+            <h2 class="mb-3">@item.Baslik</h2>
+            <p>
+              <img src="@item.BlogImage" alt="" class="img-fluid">
+            </p>
+            <p>@item.Aciklama</p>
+            
+            <div class="pt-5 mt-5">
+              <h3 class="mb-5">Yorumlar</h3>
+              <ul class="comment-list">
+                @foreach (var yorum in Model.deger2)
+                 {
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="~/images/kullanici.png" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                      
+                    <h3>@yorum.KullaniciAdi</h3>
+                    <div class="meta"></div>
+                    <p>@yorum.Yorum</p>
+                  </div>
+                </li>
+                  } 
+              </ul>
+                   <partial name="YorumYap"/>
+        </div>
+                }
+          </div>
+          
+          <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate bg-light py-md-5 fadeInUp ftco-animated">
+            <div class="sidebar-box ftco-animate fadeInUp ftco-animated">
+              <h3>Son Gönderiler</h3>
+              @foreach (var item in Model.deger3)
+			    {
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(@item.BlogImage);"></a>
+                <div class="text">
+                                <h3 class="heading"><a href="/Blog/BlogDetay/@item.ID">@item.Baslik</a></h3>
+                  <div class="meta">
+                                    <div><a href="#"><span class="icon-calendar"></span>@item.Tarih.ToString("dd MMMM yyy")</a></div>
+                  </div>
+                </div>
+              </div>
+              }
+            </div>
+            @foreach (var item in Model.deger4)
+                {   
+            <div class="sidebar-box ftco-animate fadeInUp ftco-animated">
+              <h3>Hakkımızda</h3>
+              <p>@item.Aciklama</p>
+            </div>
+                }
+          </div>
+        </div>
+      </div>
+    </section>

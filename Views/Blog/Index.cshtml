@@ -1,0 +1,37 @@
+﻿@{
+	ViewData["Title"] = "Blog";
+}
+
+@model SeyahatWebProje.Models.Siniflar.BlogYorum
+
+	<section class="ftco-section">
+      <div class="container">
+        <div class="row d-flex">
+			@foreach (var item in Model.deger1)
+		{
+          <div class="col-md-4 d-flex ftco-animate fadeInUp ftco-animated">
+          	<div class="blog-entry justify-content-end">		  
+			<a href="/Blog/BlogDetay/@item.ID" class="block-20" style="background-image: url('@item.BlogImage');"> </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center mb-4 topp">
+              		<div class="one">
+					<span class="day">@item.Tarih.ToString("dd")</span>
+              		</div>
+              		<div class="two">
+					<span class="yr">@item.Tarih.ToString("yyyy")</span>
+					<span class="mos">@item.Tarih.ToString("MM")</span>
+              		</div>
+              	</div>
+                <h3 class="heading"><a href="#">@item.Baslik</a></h3>
+                <p>@item.Aciklama.Substring(0,150)</p>
+              </div>
+			  
+            </div>
+          </div>
+		}
+        </div>
+      </div>
+    </section>
+
+
+
