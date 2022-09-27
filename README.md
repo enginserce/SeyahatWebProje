@@ -1,4 +1,4 @@
-ASP.NET MVC ile yapılan Tatil Seyahat Bloğu
+ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu
 
 ![image](https://user-images.githubusercontent.com/73286476/192392893-92af37c8-b4e6-444b-afa9-c0df5896aac5.png)
 ![image](https://user-images.githubusercontent.com/73286476/192392960-09c78057-f149-488f-80db-0eab5221b461.png)
