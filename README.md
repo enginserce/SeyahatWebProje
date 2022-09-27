@@ -7,3 +7,6 @@ ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu
 ![image](https://user-images.githubusercontent.com/73286476/192393095-efaade06-8391-48de-a07e-cb0083e9f5f7.png)
 ![image](https://user-images.githubusercontent.com/73286476/192393132-d8ad9069-afe5-4dd2-8036-c0b2c04bac2c.png)
 ![image](https://user-images.githubusercontent.com/73286476/192393180-9ec65430-fb8c-4b34-95a5-0745a1a03f8c.png)
+![image](https://user-images.githubusercontent.com/73286476/192534922-a3e05d3f-4a5b-4aa6-a2d2-5a52dd3315a8.png)
+![image](https://user-images.githubusercontent.com/73286476/192535061-1e6d4d3e-e360-45eb-bf38-19677f363332.png)
+
