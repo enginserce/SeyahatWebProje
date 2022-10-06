@@ -1,4 +1,4 @@
-ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu Sitesi<br>
+ASP.NET CORE 5 MVC ile yapılan Tatil Seyahat Bloğu Sitesi<br>
 
 Kullanıcıların içeriklere yorum yapabilmesi ve iletişim sağlayabilmesi.<br><br>
 
