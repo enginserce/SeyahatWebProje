@@ -1,4 +1,16 @@
-ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu
+ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu Sitesi
+
+Kullanıcıların içeriklere yorum yapabilmesi ve iletişim sağlayabilmesi.
+İçeriklerde son gönderileri listeleme
+Hakkımızda sayfasını içerik sayfasında listeleme
+
+Admin;
+
+İçerik ekleme, listeleme, güncelleme ve silme
+Yorumları listeleme, güncelleme ve silme
+Hakkımızda düzenleme
+İletişim sağlamak isteyen kullanıcıları listeleme ve silme
+
 
 ![image](https://user-images.githubusercontent.com/73286476/192392893-92af37c8-b4e6-444b-afa9-c0df5896aac5.png)
 ![image](https://user-images.githubusercontent.com/73286476/192392960-09c78057-f149-488f-80db-0eab5221b461.png)
