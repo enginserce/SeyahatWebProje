@@ -1,14 +1,14 @@
-ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu Sitesi
+ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu Sitesi<br>
 
-Kullanıcıların içeriklere yorum yapabilmesi ve iletişim sağlayabilmesi.
+Kullanıcıların içeriklere yorum yapabilmesi ve iletişim sağlayabilmesi.<br><br>
 
 
 Admin paneli özellikleri:
 
-İçerik ekleme, listeleme, güncelleme ve silme
-Yorumları listeleme, güncelleme ve silme
-Hakkımızda düzenleme
-İletişim sağlamak isteyen kullanıcıları listeleme ve silme
+İçerik ekleme, listeleme, güncelleme ve silme <br>
+Yorumları listeleme, güncelleme ve silme<br>
+Hakkımızda düzenleme<br>
+İletişim sağlamak isteyen kullanıcıları listeleme ve silme<br>
 
 
 ![image](https://user-images.githubusercontent.com/73286476/192392893-92af37c8-b4e6-444b-afa9-c0df5896aac5.png)
