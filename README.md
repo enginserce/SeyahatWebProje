@@ -1,10 +1,9 @@
 ASP.NET CORE MVC ile yapılan Tatil Seyahat Bloğu Sitesi
 
 Kullanıcıların içeriklere yorum yapabilmesi ve iletişim sağlayabilmesi.
-İçeriklerde son gönderileri listeleme
-Hakkımızda sayfasını içerik sayfasında listeleme
 
-Admin;
+
+Admin paneli özellikleri:
 
 İçerik ekleme, listeleme, güncelleme ve silme
 Yorumları listeleme, güncelleme ve silme
